@@ -16,8 +16,7 @@ protocol EventViewProtocol: class {
 }
 
 protocol EventWireFrameProtocol: class {
-    func createEventModule() -> UINavigationController?
-    func presentAlert(title: String, message: String)
+    func createEventModule(event: EventViewModel) -> UIViewController?
 }
 
 //MARK: - communication VIEW -> PRESENTER
@@ -31,27 +30,12 @@ protocol EventPresenterProtocol: class {
 
 //MARK: - communication INTERACTOR -> PRESENTER
 protocol EventInteractorOutputProtocol: class {
-    func eventsDidRetrieved(_ events: [EventViewModel])
-    func displayErrorMessage(title: String, message: String)
+    func updateViewModel(_ model: EventViewModel)
 }
 
 //MARK: - communication PRESENTER -> INTERACTOR
 protocol EventInteractorInputProtocol: class
 {
     var presenter: EventInteractorOutputProtocol? { get set }
-    var apiDataManager: EventAPIDataManagerInputProtocol? { get set }
-    func getEvents()
-}
-
-//MARK: - communication INTERACTOR -> DATAMANAGER
-protocol EventAPIDataManagerInputProtocol: class
-{
-    var interactor: EventRemoteDataManagerOutputProtocol? {get set}
-    func fetchEvents()
-}
-
-//MARK: - communication DATAMANAGER -> INTERACTOR
-protocol EventRemoteDataManagerOutputProtocol: class {
-    func onEventsRetrieved(_ events: Events)
-    func onError(_ error: NSError)
+    func getViewModel()
 }

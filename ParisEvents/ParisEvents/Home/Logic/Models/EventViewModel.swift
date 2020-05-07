@@ -8,6 +8,7 @@
 
 import Foundation
 struct EventViewModel {
+    let id: String
     let title: String?
     let address: String?
     let cover: URL?

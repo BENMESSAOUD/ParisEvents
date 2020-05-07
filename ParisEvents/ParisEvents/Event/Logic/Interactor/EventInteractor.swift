@@ -7,3 +7,17 @@
 //
 
 import Foundation
+class EventInteractor: EventInteractorInputProtocol {
+    private let event: EventViewModel
+    
+    var presenter: EventInteractorOutputProtocol?
+    init(with event: EventViewModel) {
+        self.event = event
+    }
+    
+    //MARK: - EventInteractorInputProtocol
+    func getViewModel() {
+        presenter?.updateViewModel(event)
+    }
+    
+}

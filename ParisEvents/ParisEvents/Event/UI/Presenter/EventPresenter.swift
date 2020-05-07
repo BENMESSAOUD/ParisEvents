@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+class EventPresenter: EventPresenterProtocol, EventInteractorOutputProtocol {
+    var view: EventViewProtocol?
+    var interactor: EventInteractorInputProtocol?
+    var wireFrame: EventWireFrameProtocol?
+    
+    //MARK: EventPresenterProtocol
+    func viewDidLoad() {
+        interactor?.getViewModel()
+    }
+    
+    //MARK: - EventInteractorOutputProtocol
+    func updateViewModel(_ model: EventViewModel) {
+        view?.bindData(with: model)
+    }
+
+}
