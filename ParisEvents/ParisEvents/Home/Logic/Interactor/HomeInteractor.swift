@@ -34,6 +34,7 @@ extension Event {
 
 extension EventViewModel {
     init(from event: Event) {
+        id = event.id
         title = event.title
         address = event.address
         if let coverUrl = event.coverURL, let url = URL(string: coverUrl) {

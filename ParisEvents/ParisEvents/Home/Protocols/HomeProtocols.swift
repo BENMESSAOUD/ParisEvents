@@ -18,6 +18,7 @@ protocol HomeViewProtocol: class {
 protocol HomeWireFrameProtocol: class {
     func createHomeModule() -> UINavigationController?
     func presentAlert(title: String, message: String)
+    func presentEventDetails(_ event: EventViewModel)
 }
 
 //MARK: - communication VIEW -> PRESENTER
@@ -27,6 +28,7 @@ protocol HomePresenterProtocol: class {
     var wireFrame: HomeWireFrameProtocol? { get set }
     
     func viewDidLoad()
+    func eventItemDidSelected(_ item: EventItemViewModel)
 }
 
 //MARK: - communication INTERACTOR -> PRESENTER
