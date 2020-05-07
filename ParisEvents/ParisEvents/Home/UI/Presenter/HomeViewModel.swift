@@ -11,6 +11,7 @@ struct HomeViewModel {
     let rows: [EventItemViewModel]
 }
 struct EventItemViewModel {
+    let id: String
     let title: String?
     let category: String?
     let address: String?

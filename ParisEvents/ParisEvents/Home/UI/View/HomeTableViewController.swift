@@ -14,15 +14,12 @@ class HomeTableViewController: UITableViewController, HomeViewProtocol {
     
     //MARK: - Private properties
     var rows = [EventItemViewModel]()
-    //MARK: - IBOutlet
-    
     
     //MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
     }
-    
     
     //MARK: - HomeViewProtocol implementation
     func bindData(with model:HomeViewModel) {
@@ -31,7 +28,6 @@ class HomeTableViewController: UITableViewController, HomeViewProtocol {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -47,6 +43,11 @@ class HomeTableViewController: UITableViewController, HomeViewProtocol {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell", for: indexPath) as? EventTableViewCell
         cell?.configure(with: item)
         return cell ?? UITableViewCell()
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = rows[indexPath.row]
+        presenter?.eventItemDidSelected(item)
     }
 
     

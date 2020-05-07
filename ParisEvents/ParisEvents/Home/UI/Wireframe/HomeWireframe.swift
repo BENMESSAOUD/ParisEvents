@@ -30,6 +30,12 @@ class HomeWireframe: HomeWireFrameProtocol {
         navController?.present(alertController, animated: true, completion: nil)
     }
     
+    func presentEventDetails(_ event: EventViewModel) {
+        if let detailModule = EventWireframe().createEventModule(event: event) {
+            navController?.pushViewController(detailModule, animated: true)
+        }
+    }
+    
     func createHomeModule() -> UINavigationController? {
         navController = HomeStoryboard.instantiateViewController(withIdentifier: HomeUIIdentifier.navigationController) as? UINavigationController
         view = navController?.topViewController as? HomeTableViewController & HomeViewProtocol
@@ -47,6 +53,4 @@ class HomeWireframe: HomeWireFrameProtocol {
         apiDataManager?.interactor = interactor as? HomeRemoteDataManagerOutputProtocol
         return navController
     }
-    
-    
 }
