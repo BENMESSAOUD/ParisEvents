@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1E9D441E2464450E008D52EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D441D2464450E008D52EE /* AppDelegate.swift */; };
-		1E9D44202464450E008D52EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D441F2464450E008D52EE /* SceneDelegate.swift */; };
 		1E9D44222464450E008D52EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D44212464450E008D52EE /* ViewController.swift */; };
 		1E9D44252464450E008D52EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E9D44232464450E008D52EE /* Main.storyboard */; };
 		1E9D442724644510008D52EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E9D442624644510008D52EE /* Assets.xcassets */; };
@@ -16,6 +15,19 @@
 		1E9D443524644510008D52EE /* ParisEventsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D443424644510008D52EE /* ParisEventsTests.swift */; };
 		1E9D4449246445C7008D52EE /* EventsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D4448246445C7008D52EE /* EventsService.swift */; };
 		1E9D444C246445F6008D52EE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1E9D444B246445F6008D52EE /* Alamofire */; };
+		1E9D445224644B3E008D52EE /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D445124644B3E008D52EE /* HomeProtocols.swift */; };
+		1E9D445424644BB9008D52EE /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D445324644BB9008D52EE /* HomeTableViewController.swift */; };
+		1E9D445924644BF7008D52EE /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D445824644BF7008D52EE /* HomePresenter.swift */; };
+		1E9D445B24644C06008D52EE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D445A24644C06008D52EE /* HomeViewModel.swift */; };
+		1E9D445D24644D1C008D52EE /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D445C24644D1C008D52EE /* HomeWireframe.swift */; };
+		1E9D446024644F7E008D52EE /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D445F24644F7E008D52EE /* HomeInteractor.swift */; };
+		1E9D446224644FFA008D52EE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E9D446124644FFA008D52EE /* Home.storyboard */; };
+		1E9D446524645185008D52EE /* APIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D446424645185008D52EE /* APIDataManager.swift */; };
+		1E9D446A246452F6008D52EE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D4467246452F6008D52EE /* Event.swift */; };
+		1E9D446B246452F6008D52EE /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D4468246452F6008D52EE /* Record.swift */; };
+		1E9D446C246452F6008D52EE /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D4469246452F6008D52EE /* Events.swift */; };
+		1E9D446E24645497008D52EE /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D446D24645497008D52EE /* EventViewModel.swift */; };
+		1E9D447024645A68008D52EE /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9D446F24645A68008D52EE /* EventTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +43,6 @@
 /* Begin PBXFileReference section */
 		1E9D441A2464450E008D52EE /* ParisEvents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParisEvents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9D441D2464450E008D52EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1E9D441F2464450E008D52EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1E9D44212464450E008D52EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1E9D44242464450E008D52EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E9D442624644510008D52EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +52,19 @@
 		1E9D443424644510008D52EE /* ParisEventsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParisEventsTests.swift; sourceTree = "<group>"; };
 		1E9D443624644510008D52EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E9D4448246445C7008D52EE /* EventsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsService.swift; sourceTree = "<group>"; };
+		1E9D445124644B3E008D52EE /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		1E9D445324644BB9008D52EE /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		1E9D445824644BF7008D52EE /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		1E9D445A24644C06008D52EE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1E9D445C24644D1C008D52EE /* HomeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
+		1E9D445F24644F7E008D52EE /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		1E9D446124644FFA008D52EE /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		1E9D446424645185008D52EE /* APIDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDataManager.swift; sourceTree = "<group>"; };
+		1E9D4467246452F6008D52EE /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		1E9D4468246452F6008D52EE /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		1E9D4469246452F6008D52EE /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		1E9D446D24645497008D52EE /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		1E9D446F24645A68008D52EE /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +107,9 @@
 		1E9D441C2464450E008D52EE /* ParisEvents */ = {
 			isa = PBXGroup;
 			children = (
+				1E9D444D24644AB0008D52EE /* Home */,
 				1E9D443F24644557008D52EE /* Services */,
 				1E9D441D2464450E008D52EE /* AppDelegate.swift */,
-				1E9D441F2464450E008D52EE /* SceneDelegate.swift */,
 				1E9D44212464450E008D52EE /* ViewController.swift */,
 				1E9D44232464450E008D52EE /* Main.storyboard */,
 				1E9D442624644510008D52EE /* Assets.xcassets */,
@@ -118,6 +142,98 @@
 				1E9D4448246445C7008D52EE /* EventsService.swift */,
 			);
 			path = EventsService;
+			sourceTree = "<group>";
+		};
+		1E9D444D24644AB0008D52EE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1E9D445024644AFC008D52EE /* Protocols */,
+				1E9D444F24644AC5008D52EE /* Logic */,
+				1E9D444E24644ABC008D52EE /* UI */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1E9D444E24644ABC008D52EE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1E9D445724644BD9008D52EE /* Wireframe */,
+				1E9D445624644BCA008D52EE /* Presenter */,
+				1E9D445524644BC2008D52EE /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1E9D444F24644AC5008D52EE /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				1E9D4466246452DC008D52EE /* Models */,
+				1E9D44632464515F008D52EE /* DataManager */,
+				1E9D445E24644F6C008D52EE /* Interactor */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		1E9D445024644AFC008D52EE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1E9D445124644B3E008D52EE /* HomeProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1E9D445524644BC2008D52EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E9D445324644BB9008D52EE /* HomeTableViewController.swift */,
+				1E9D446124644FFA008D52EE /* Home.storyboard */,
+				1E9D446F24645A68008D52EE /* EventTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E9D445624644BCA008D52EE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1E9D445824644BF7008D52EE /* HomePresenter.swift */,
+				1E9D445A24644C06008D52EE /* HomeViewModel.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1E9D445724644BD9008D52EE /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				1E9D445C24644D1C008D52EE /* HomeWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		1E9D445E24644F6C008D52EE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1E9D445F24644F7E008D52EE /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1E9D44632464515F008D52EE /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				1E9D446424645185008D52EE /* APIDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		1E9D4466246452DC008D52EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E9D4467246452F6008D52EE /* Event.swift */,
+				1E9D4469246452F6008D52EE /* Events.swift */,
+				1E9D4468246452F6008D52EE /* Record.swift */,
+				1E9D446D24645497008D52EE /* EventViewModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +326,7 @@
 				1E9D442A24644510008D52EE /* LaunchScreen.storyboard in Resources */,
 				1E9D442724644510008D52EE /* Assets.xcassets in Resources */,
 				1E9D44252464450E008D52EE /* Main.storyboard in Resources */,
+				1E9D446224644FFA008D52EE /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,9 +344,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E9D445924644BF7008D52EE /* HomePresenter.swift in Sources */,
+				1E9D445424644BB9008D52EE /* HomeTableViewController.swift in Sources */,
 				1E9D44222464450E008D52EE /* ViewController.swift in Sources */,
+				1E9D446024644F7E008D52EE /* HomeInteractor.swift in Sources */,
+				1E9D446C246452F6008D52EE /* Events.swift in Sources */,
+				1E9D446A246452F6008D52EE /* Event.swift in Sources */,
+				1E9D445B24644C06008D52EE /* HomeViewModel.swift in Sources */,
+				1E9D445224644B3E008D52EE /* HomeProtocols.swift in Sources */,
+				1E9D447024645A68008D52EE /* EventTableViewCell.swift in Sources */,
+				1E9D446B246452F6008D52EE /* Record.swift in Sources */,
+				1E9D445D24644D1C008D52EE /* HomeWireframe.swift in Sources */,
+				1E9D446524645185008D52EE /* APIDataManager.swift in Sources */,
 				1E9D441E2464450E008D52EE /* AppDelegate.swift in Sources */,
-				1E9D44202464450E008D52EE /* SceneDelegate.swift in Sources */,
+				1E9D446E24645497008D52EE /* EventViewModel.swift in Sources */,
 				1E9D4449246445C7008D52EE /* EventsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +520,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ParisEvents/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -399,7 +528,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fr.mbm.parisEvent.ParisEvents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -409,6 +538,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ParisEvents/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -416,7 +546,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fr.mbm.parisEvent.ParisEvents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
